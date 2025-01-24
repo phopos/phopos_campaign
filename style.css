@@ -1,0 +1,161 @@
+/* style.css */
+
+/* جعل النص يبدأ من اليمين إلى اليسار */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* لون خلفية الصفحة */
+    overflow-x: hidden;
+    height: 100vh;
+    direction: rtl; /* النص من اليمين إلى اليسار */
+    font-size: 18px; /* تكبير حجم الخط */
+}
+
+header img {
+    max-width: 250px;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* لون خلفية الهيدر */
+    padding: 20px;
+    color: #2f58a8; /* لون النص في الهيدر */
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    direction: rtl; /* النص من اليمين إلى اليسار */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2f58a8;
+    color: hsl(0, 0%, 100%);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    direction: rtl; /* النص من اليمين إلى اليسار */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    direction: rtl; /* النص من اليمين إلى اليسار */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px; /* تغيير margin-right إلى margin-left */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2f58a8; /* لون روابط الهيدر */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* لون الروابط عند التمرير */
+}
+
+/* تنسيق قسم المقالات */
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.article-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.article-box:hover {
+    transform: translateY(-5px); /* تأثير رفع Box عند التمرير */
+}
+
+.article-box h3 {
+    margin: 0 0 10px;
+    color: #2f58a8; /* لون العنوان */
+}
+
+.article-box p {
+    margin: 5px 0;
+    color: #555; /* لون النص */
+}
+
+.article-box ol, .article-box ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.article-box ol li, .article-box ul li {
+    margin-bottom: 10px;
+    color: #555; /* لون النص */
+}
+
+/* تنسيق قسم الأطباء */
+.doctors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.doctor-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.doctor-box:hover {
+    transform: translateY(-5px); /* تأثير رفع Box عند التمرير */
+}
+
+.doctor-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.doctor-info h3 {
+    margin: 0 0 10px;
+    color: #2f58a8; /* لون العنوان */
+}
+
+.doctor-info p {
+    margin: 5px 0;
+    color: #555; /* لون النص */
+}
+
+.doctor-info ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.doctor-info ul li {
+    margin-bottom: 10px;
+    color: #555; /* لون النص */
+}
+
+/* التمرير داخل الصفحة */
+section {
+    overflow-y: auto;
+    max-height: 600px; /* زيادة الارتفاع لاستيعاب المحتوى */
+}
